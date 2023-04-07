@@ -3,7 +3,20 @@ Curso da alura - Microsserviços na prática: implementando com Java e Spring
 
 Repositório para armazenar o código fonte do curso **Microsserviços na prática: implementando com Java e Spring**
 
+## Microserviços
+* Pedidos
+* Pagamentos
+* Gateway
+* Server
 
+### Gateway
+* Ponte entre os microserviços
+
+### Server
+* Registra todos os clientes
+
+### Pedidos e Pagamentos
+* Aplicações com a regra de negócio
 
 ## Referência
 
