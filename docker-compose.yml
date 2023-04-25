@@ -1,0 +1,23 @@
+version: "3.6"
+
+services:
+    rabbitmq:
+        image: rabbitmq:3.10-management
+        container_name: rabbitmq
+        restart: always
+        ports:
+            - 5672:5672
+            - 15672:15672
+        volumes:
+            - ./dados:/var/lib/rabbitmq/
+        environment:
+            - RABBITMQ_DEFAULT_USER=teste
+            - RABBITMQ_DEFAULT_PASS=alura
+    mysql:
+        image: mysql
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: root          
+        volumes:            
+            - ./db_data:/var/lib/mysql    
